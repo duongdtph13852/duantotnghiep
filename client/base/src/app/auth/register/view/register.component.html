@@ -34,7 +34,7 @@
           </nz-form-control>
         </nz-form-item>
 
-        <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">{{'auth.register' | translate}}</button>
+        <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'" (click)="linkToLogin()" >{{'auth.register' | translate}}</button>
       </form>
       <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'" (click)="save()">{{'auth.login' | translate}} ngay!</button>
   </div>

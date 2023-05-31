@@ -34,6 +34,10 @@ export class RegisterComponent implements OnInit {
     })
   }
 
+  linkToLogin(){
+    this.router.navigate(['login']);
+  }
+
   save(){
 
     if(this.formRegister.valid){
